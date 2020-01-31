@@ -1,0 +1,106 @@
+     
+   20  wget -P ~/Biosofts/ https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.2/sratoolkit.2.10.2-ubuntu64.tar.gz
+   37  pwd
+   38  tar zvxf sratoolkit.2.10.2-ubuntu64.tar.gz 
+
+   45  ./bin/fastq-dump -h
+ 
+   47  ./bin/vdb-config --interactive
+   48  ls
+   49  cat README.md 
+   50  q
+ 
+   52  cat README-vdb-config 
+
+   59  ./fastq-dump
+   60  ./fastq-dump -h
+   61  cd ..
+   62  ls
+   63  ./bin/fastq-dump -h
+   64  echo $PATH
+   65  cd bin/
+   66  ls
+  
+   72  pwd
+   73  echo 'export PATH=/home/xiaoni/Biosofts/sratoolkit.2.10.2-ubuntu64/bin:$PATH' >> ~/.bashrc 
+   74  more ~/.bashrc
+   75  source ~/.bashrc
+   76  cd
+   77  fastq-dump -h
+   78  fastq-dump -V
+   
+  139  cd FastQC/
+  140  pwd
+  141  ls
+  142  prefetch SRR2079547
+  143  ls
+  144  head SRR2079547/
+  145  cd SRR2079547/
+  146  LS
+  147  ls
+  148  head SRR2079547.sra
+  149  ls
+  150  fastq-dump SRR2079547.sra
+  151  ls
+  152  head SRR2079547.fastq
+  
+  
+  321  java -version
+  322  sudo apt install default-jre
+  
+  323  java -version
+  324  ls
+  325  cd Biosofts/
+  326  ls
+  327  cd FastQC/
+  328  ls
+  329  chmod a+x fastqc
+  330  ./fastqc 
+  331  cd
+  332  ls
+  333  cd Biosofts/
+  334  ls
+  335  cd FastQC/
+  336  ls
+  337  ./fastqc 
+  338  cd ..
+  339  ls
+  340  cd SRR2079547/
+  341  ls
+  342  mixcr align -l TRB -s hsa SRR2079547.fastq SRR2079547.vdjca
+  343  cd
+  344  ls
+  345  cd Biosofts/
+  346  ls
+  347  cd mixcr/
+  348  ls
+  349  ./mixcr 
+  350  cd
+  351  ls
+  352  cd SRR2079547/
+  353  ls
+  354  mixcr align -l TRB -s hsa SRR2079547.fastq SRR2079547.vdjca
+  355  cd
+  356  ls
+  357  gedit .bashrc 
+  358  source .bashrc
+  359  mixcr -h
+  360  cd
+  361  ge
+  362  gedit 
+  363  gedit .bashrc
+  364  ls
+  365  cd SRR2079547/
+
+  372  mixcr align -s hsa SRR2079547.fastq SRR2079547.vdjca
+
+  374  mixcr align -h
+  375  mixcr help align 
+  376  ls
+  377  mixcr assemble SRR2079547.vdjca SRR2079547.clns
+  378  head SRR2079547.clns 
+  379  ls
+  380  mixcr exportClones SRR2079547.clns SRR2079547.txt
+  381  ls
+  382  head SRR2079547.txt 
+  
