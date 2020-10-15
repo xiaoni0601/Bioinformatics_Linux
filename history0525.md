@@ -1,3 +1,4 @@
+```
     1  sudo apt remove firefox
     2  sudo apt install gdebi-core wget
     3  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -40,4 +41,5 @@
    77  vim ./variable.sh
    78  chmod 744 ./variable.sh 
    79  ./variable.sh 
-   80 
+```
+   
